@@ -8,6 +8,6 @@ class Vpngate:
 	def filter(Folder_Path, File_Name):
 		VpnFilter.ChooseFilterWay.filter(Folder_Path, File_Name)
 	def connection(Source, Filtered_Csv_Path):
-		vpn_hostname, vpn_ip, vpn_country = VpnSelection.selectOne(Source, show_list = "y")
+		vpn_hostname, vpn_ip, vpn_country = VpnSelection.selectOne(Source, Show_List = "y")
 		ovpn_file_content = VpnSelection.decodeSelectedVpn(Filtered_Csv_Path, Vpn_Hostname)
 		Connection.systemIdentify(Vpn_Hostname, Vpn_Ip, Vpn_Country, Ovpn_File_Content)
