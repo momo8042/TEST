@@ -40,7 +40,7 @@ def chooseOperation(Folder_Path, File_Name, Website_Name):
             source = pd.read_csv(filtered_csv_path)
 
             if Website_Name == 'vpngate':
-                WebsiteFunction.Vpngate.Connection(source, filtered_csv_path)
+                WebsiteFunction.Vpngate.connection(source, filtered_csv_path)
         
         elif function_chioce == '0':
             sys.exit()
